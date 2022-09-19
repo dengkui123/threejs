@@ -50177,15 +50177,16 @@ var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHei
 camera.position.set(0, 0, 10);
 scene.add(camera); // 添加物体
 // 创建几何体
-
-var cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.MeshBasicMaterial({
-  color: 0xffff00
-});
-var cube = new THREE.Mesh(cubeGeometry, material); // 修改物体的位置
-
-cube.position.set(5, 0, 0);
-cube.position.x = 0; // // 缩放
+// const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+// const material = new THREE.MeshBasicMaterial({
+//   color: 0xffff00,
+// });
+// const cube = new THREE.Mesh(cubeGeometry, material);
+// console.log(cube);
+// 修改物体的位置
+// cube.position.set(5, 0, 0);
+// cube.position.x = 0;
+// // 缩放
 // cube.scale.set(3, 2, 1);
 // cube.scale.x = 4;
 // // 旋转
@@ -50329,7 +50330,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62635" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49743" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
